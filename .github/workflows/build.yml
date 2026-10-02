@@ -18,13 +18,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew || true
-
-      - name: Build APK with Gradle Wrapper
+      - name: Setup and Execute Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.0.2'
+          gradle-version: '8.5'
           arguments: assembleDebug
 
       - name: Upload APK
