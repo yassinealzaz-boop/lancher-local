@@ -1,4 +1,4 @@
-package com.accessible.audiolauncher
+package com.launcher.vocal
 
 import android.content.BroadcastReceiver
 import android.content.Context
